@@ -31,7 +31,7 @@ public class ReadCsvFile {
     }
 
     public static List<String> parseCsvLine(String csvLine) {
-        List<String> result = new ArrayList<String>();
+        List<String> result = new ArrayList<>();
         if (csvLine != null) {
             String[] splitData = csvLine.split(COMMA_DELIMITER);
             result.addAll(Arrays.asList(splitData));
